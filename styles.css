@@ -59,9 +59,9 @@ h2 {
 }
 
 .portfolio-item img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
 }
 
 .portfolio-item h3 {
