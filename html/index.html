@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Grau's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -47,7 +47,33 @@
         <h2>Contact</h2>
         <p>You can contact me either by <a href="mailto:evankgr13@gmail.com">email</a> or by phone at +1 (765) 431-7065</p>
         <p>Feel free to also reach out to me using the contact form below:</p>
-        <form id="contact-form" action="process_form.php" method="post">
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+        
+                // Perform client-side validation here
+                if (name === "" || email === "" || message === "") {
+                    alert("Please fill in all fields.");
+                    return false; // Prevent form submission
+                }
+        
+                return true; // Allow form submission
+            }
+            function updateCharacterCount() {
+                var message = document.getElementById("message");
+                var characterCount = document.getElementById("character-count");
+                var maxLength = parseInt(message.getAttribute("maxlength"));
+                var currentLength = message.value.length;
+
+                characterCount.textContent = currentLength + " / " + maxLength;
+            }
+
+            // Attach the event listener to the textarea
+            document.getElementById("message").addEventListener("input", updateCharacterCount);
+        </script>
+        <form id="contact-form" action="process_form.php" method="post"  onsubmit="return validateForm();">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -58,7 +84,8 @@
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" maxlength="255" required></textarea>
+                <div id="character-count">0 / 500</div>
             </div>
             <div class="form-group">
                 <button type="submit">Submit</button>
