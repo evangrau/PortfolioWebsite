@@ -73,7 +73,7 @@
             // Attach the event listener to the textarea
             document.getElementById("message").addEventListener("input", updateCharacterCount);
         </script>
-        <form id="contact-form" action="process_form.php" method="post"  onsubmit="return validateForm();">
+        <form id="contact-form" action="php/process_form.php" method="post"  onsubmit="return validateForm();">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
