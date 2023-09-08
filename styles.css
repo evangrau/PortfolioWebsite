@@ -33,6 +33,22 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Change the default link color */
+a {
+    color: purple; /* You can set your desired color value */
+}
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+}
+
+/* Style links when hovered over */
+a:hover {
+    text-decoration: underline; /* You can customize this hover effect */
+}
+
+
 nav a {
     text-decoration: none;
     color: #fff;
