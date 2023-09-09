@@ -55,6 +55,12 @@ nav a {
     font-weight: bold;
 }
 
+/* Style iframe */
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Style the sections */
 section {
     padding: 40px;
