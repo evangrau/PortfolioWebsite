@@ -1,37 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evan Grau's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <!-- <h1>Evan Grau's Portfolio Website</h1> -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/evangrau/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://linktr.ee/evangrau" target="_blank">Linktree</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/662a150eff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><i class="fa-solid fa-laptop-code"></i>Evan Grau</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://linktr.ee/evangrau"
+              class="navbar__links"
+              target="_blank"
+              >Linktree</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/portfolio.html" class="navbar__links">Portfolio</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/contact.html" class="button">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <section id="about">
-        <h2>Who am I?</h2>
-        <p>
-            Hi! My name is Evan Grau. I am currently a junior at <a href="https://www.acu.edu" target="_blank">Abilene Christian University</a>. I am a Computer Science Major
-            and I am working to get my BS. My <a href="https://www.linkedin.com/in/evangrau/" target="_blank">LinkedIn</a> contains more detailed work information about me for
-            those who may be interested. Please visit my <a href="about.html">about page</a> for a more detailed history of who I am.
-        </p>
-    </section>
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>NEXT GENERATION</h1>
+          <h2>TECHNOLOGY</h2>
+          <p>See what makes up different.</p>
+          <button class="main__btn"><a href="#">Get Started</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/messages.svg" />
+        </div>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Evan Grau</p>
-    </footer>
-</body>
+    <!-- Services Section -->
+    <div class="services">
+      <h1>See what the hype is about</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Experience Bliss</h2>
+          <p>AI Powered technology</p>
+          <button>Get Started</button>
+        </div>
+        <div class="services__card">
+          <h2>Are you Ready?</h2>
+          <p>Take the leap</p>
+          <button>Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Investments</a>
+            <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a> <a href="/">Influencer</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"
+              ><i class="fa-solid fa-laptop-code"></i>Evan Grau</a
+            >
+          </div>
+          <p class="website__rights">© Evan Grau 2023. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="https://github.com/evangrau"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://discordapp.com/users/294217244802678784"
+              target="_blank"
+              aria-label="Discord"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://steamcommunity.com/id/whatissatire/"
+              target="_blank"
+              aria-label="Steam"
+            >
+              <i class="fa-brands fa-steam"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="//www.youtube.com/channel/UCOUYrHW6048ChqTllRrVBRg?view_as=subscriber"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.twitch.tv/whatissatire"
+              target="_blank"
+              aria-label="Twitch"
+            >
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://twitter.com/whatissatire_"
+              target="_blank"
+              aria-label="Twitter/X"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.linkedin.com/in/evangrau/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
